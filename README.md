@@ -21,8 +21,9 @@ A simple command-line tool to manage multiple NDK versions on macOS.
 
 1. Download the latest release from the [Releases page](https://github.com/yourusername/ndkctl/releases).
 2. Extract the archive:
-   bash
-   tar -xzvf ndkctl-1.0.0.tar.gz
+```bash
+   unzip ndkctl-v1.0.0.zip
+```
    
 3. Run the installation script:
    bash
