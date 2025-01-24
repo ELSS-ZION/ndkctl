@@ -38,7 +38,8 @@ A simple command-line tool to manage multiple NDK versions on macOS.
 
 If you have Homebrew installed, you can install `ndkctl` directly:
 ```bash
-brew install yourusername/your-tap-repo/ndkctl
+brew tap ELSS-ZION/ndkctl
+brew install ndkctl
 ```
 
 ## Usage
