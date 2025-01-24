@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Load the core script
+source "$(dirname "$0")/../lib/ndkctl.sh"
+
+# Parse command-line arguments
+case "$1" in
+    set)
+        if [[ -z "$2" ]]; then
+            echo "Usage: ndkctl set <version>"
+            exit 1
+        fi
+        set-ndk "$2"
+        ;;
+    list)
+        list-ndk
+        ;;
+    *)
+        echo "Usage: ndkctl <command>"
+        echo "Commands:"
+        echo "  set <version>  Set the current NDK version"
+        echo "  list           List all available NDK versions"
+        exit 1
+        ;;
+esac
